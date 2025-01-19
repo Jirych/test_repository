@@ -1,0 +1,264 @@
+Protel Design System Design Rule Check
+PCB File : D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\lower board\mini_plata.PcbDoc
+Date     : 16.01.2025
+Time     : 22:50:23
+
+Processing Rule : Clearance Constraint (Gap=0.15mm) (All),(All)
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (10.166mm,24.784mm) on Top Layer And Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (10.166mm,24.784mm) on Top Layer And Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (10.25mm,25.275mm) on Bottom Layer And Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (0.022mm < 0.15mm) Between Arc (10.882mm,16.472mm) on Top Layer And Track (12.9mm,17.375mm)(12.9mm,20.5mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (0.039mm < 0.15mm) Between Arc (11.45mm,27.275mm) on Bottom Layer And Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (11.775mm,16.216mm) on Top Layer And Track (11.175mm,15.65mm)(12.9mm,17.375mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (11.775mm,16.216mm) on Top Layer And Track (12.9mm,17.375mm)(12.9mm,20.5mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (13.251mm,29.251mm) on Bottom Layer And Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (20.393mm,17.479mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (20.804mm,17.629mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (20.804mm,17.629mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (0.062mm < 0.15mm) Between Arc (21.761mm,19.536mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (0.063mm < 0.15mm) Between Arc (21.761mm,19.536mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (0.137mm < 0.15mm) Between Arc (21.787mm,16.363mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (21.7mm,12.227mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (21.958mm,19.608mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (0.1497mm (5.8954mil) < 0.15mm (5.9055mil)) Between Arc (22.295mm,13.784mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (22.454mm,19.904mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (0mm < 0.15mm) Between Arc (22.495mm,12.095mm) on Bottom Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (0mm < 0.15mm) Between Arc (22.495mm,12.095mm) on Bottom Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (0.075mm < 0.15mm) Between Arc (22.751mm,12.701mm) on Bottom Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (0.075mm < 0.15mm) Between Arc (22.751mm,12.701mm) on Bottom Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (25.475mm,23.774mm) on Top Layer And Track (25.575mm,25.675mm)(29.95mm,21.3mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (27.475mm,22.44mm) on Top Layer And Track (25.575mm,25.675mm)(29.95mm,21.3mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (27.76mm,7.61mm) on Top Layer And Track (29.95mm,1.3mm)(29.95mm,21.3mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (28.102mm,12.652mm) on Top Layer And Track (29.95mm,1.3mm)(29.95mm,21.3mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (29.1mm,8.478mm) on Top Layer And Track (29.95mm,1.3mm)(29.95mm,21.3mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (29.6mm,12.154mm) on Top Layer And Track (29.95mm,1.3mm)(29.95mm,21.3mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (3.74mm,9.188mm) on Bottom Layer And Track (5.175mm,3.575mm)(5.175mm,14.025mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (30mm,13.185mm) on Top Layer And Track (29.95mm,1.3mm)(29.95mm,21.3mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (0.119mm < 0.15mm) Between Arc (4.05mm,16.535mm) on Bottom Layer And Track (2.5mm,16.7mm)(5.175mm,14.025mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (0.101mm < 0.15mm) Between Arc (4.974mm,11.951mm) on Bottom Layer And Track (2.5mm,16.7mm)(5.175mm,14.025mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (4.974mm,11.951mm) on Bottom Layer And Track (5.175mm,3.575mm)(5.175mm,14.025mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (6.638mm,28.037mm) on Top Layer And Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (6.638mm,28.037mm) on Top Layer And Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (7.209mm,27.741mm) on Top Layer And Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (7.252mm,10.81mm) on Bottom Layer And Track (5.175mm,3.575mm)(5.175mm,14.025mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (7.301mm,9.188mm) on Bottom Layer And Track (5.175mm,3.575mm)(5.175mm,14.025mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (8.575mm,23.508mm) on Bottom Layer And Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (8.575mm,23.508mm) on Bottom Layer And Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (9.837mm,24.838mm) on Top Layer And Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Arc (9.837mm,24.838mm) on Top Layer And Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Area Fill (0.275mm,17.025mm) (2.075mm,20.45mm) on Top Layer And Track (1.225mm,19.475mm)(1.225mm,19.525mm) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Area Fill (0.275mm,17.025mm) (2.075mm,20.45mm) on Top Layer And Track (1.225mm,19.475mm)(1.85mm,18.85mm) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Area Fill (0.275mm,17.025mm) (2.075mm,20.45mm) on Top Layer And Track (1.85mm,18.85mm)(4.6mm,18.85mm) on Top Layer 
+   Violation between Clearance Constraint: (0.1mm < 0.15mm) Between Pad C16-1(10.405mm,16.2mm) on Top Layer And Track (6.825mm,15.65mm)(11.175mm,15.65mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (0.1mm < 0.15mm) Between Pad C16-2(9.475mm,16.2mm) on Top Layer And Track (6.825mm,15.65mm)(11.175mm,15.65mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad C2-2(30.55mm,20.475mm) on Top Layer And Track (25.575mm,25.675mm)(29.95mm,21.3mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad C2-2(30.55mm,20.475mm) on Top Layer And Track (29.95mm,1.3mm)(29.95mm,21.3mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad C22-1(4.6mm,12.6mm) on Top Layer And Track (2.5mm,16.7mm)(5.175mm,14.025mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad C22-1(4.6mm,12.6mm) on Top Layer And Track (5.175mm,3.575mm)(5.175mm,14.025mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (0.115mm < 0.15mm) Between Pad C22-1(4.6mm,12.6mm) on Top Layer And Track (5.2mm,14.025mm)(6.825mm,15.65mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad C3-2(30.55mm,18.675mm) on Top Layer And Track (29.95mm,1.3mm)(29.95mm,21.3mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad C6-2(27.475mm,23.225mm) on Top Layer And Track (25.575mm,25.675mm)(29.95mm,21.3mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad DA1-2(27.775mm,22.9mm) on Bottom Layer And Track (25.575mm,25.675mm)(29.95mm,21.3mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad DA1-3(30.075mm,22.9mm) on Bottom Layer And Track (25.575mm,25.675mm)(29.95mm,21.3mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad DD1-4(29.655mm,7.1mm) on Top Layer And Track (29.95mm,1.3mm)(29.95mm,21.3mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad DD1-5(29.655mm,12.5mm) on Top Layer And Track (29.95mm,1.3mm)(29.95mm,21.3mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad DD2-21(20.789mm,12.279mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad DD2-22(21.143mm,12.632mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad DD2-23(21.496mm,12.986mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad DD2-24(21.85mm,13.339mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad DD2-25(21.85mm,15.461mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad DD2-26(21.496mm,15.814mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad DD2-27(21.143mm,16.168mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad DD2-28(20.789mm,16.521mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (0.088mm < 0.15mm) Between Pad DD2-43(13.718mm,17.228mm) on Top Layer And Track (12.9mm,17.375mm)(12.9mm,20.5mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad DD2-44(13.364mm,16.875mm) on Top Layer And Track (11.175mm,15.65mm)(12.9mm,17.375mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad DD2-44(13.364mm,16.875mm) on Top Layer And Track (12.9mm,17.375mm)(12.9mm,20.5mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad DD2-45(13.011mm,16.521mm) on Top Layer And Track (11.175mm,15.65mm)(12.9mm,17.375mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad DD2-46(12.657mm,16.168mm) on Top Layer And Track (11.175mm,15.65mm)(12.9mm,17.375mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (0.047mm < 0.15mm) Between Pad DD2-46(12.657mm,16.168mm) on Top Layer And Track (11.88mm,16.238mm)(11.88mm,17.101mm) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad DD2-47(12.304mm,15.814mm) on Top Layer And Track (11.175mm,15.65mm)(12.9mm,17.375mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad DD2-48(11.95mm,15.461mm) on Top Layer And Track (11.175mm,15.65mm)(12.9mm,17.375mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (0.139mm < 0.15mm) Between Pad DD2-48(11.95mm,15.461mm) on Top Layer And Track (6.825mm,15.65mm)(11.175mm,15.65mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad DD3-6(4.765mm,23.475mm) on Bottom Layer And Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad DD3-7(6.035mm,23.475mm) on Bottom Layer And Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad R23-1(6.305mm,24.015mm) on Top Layer And Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad R24-2(4.875mm,22.525mm) on Top Layer And Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad R5-1(21.453mm,10.647mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad VD1-K(8.225mm,15.345mm) on Top Layer And Track (6.825mm,15.65mm)(11.175mm,15.65mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad XS6-1(11.5mm,27.75mm) on Multi-Layer And Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Pad XS6-2(11.5mm,29.75mm) on Multi-Layer And Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (0.025mm < 0.15mm) Between Track (1.225mm,19.475mm)(1.85mm,18.85mm) on Top Layer And Track (2.5mm,16.7mm)(2.5mm,20.25mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (1.65mm,14.95mm)(10.037mm,14.95mm) on Bottom Layer And Track (2.5mm,16.7mm)(5.175mm,14.025mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (1.65mm,14.95mm)(10.037mm,14.95mm) on Bottom Layer And Track (5.2mm,14.025mm)(6.825mm,15.65mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (1.85mm,18.85mm)(4.6mm,18.85mm) on Top Layer And Track (2.5mm,16.7mm)(2.5mm,20.25mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (10.25mm,27.75mm)(11.5mm,27.75mm) on Bottom Layer And Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (0.114mm < 0.15mm) Between Track (10.405mm,16.2mm)(11.211mm,16.2mm) on Top Layer And Track (11.175mm,15.65mm)(12.9mm,17.375mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (11.175mm,15.65mm)(12.9mm,17.375mm) on Keep-Out Layer And Track (11.211mm,16.2mm)(11.95mm,15.461mm) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (11.175mm,15.65mm)(12.9mm,17.375mm) on Keep-Out Layer And Track (11.88mm,16.238mm)(11.88mm,17.101mm) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (11.175mm,15.65mm)(12.9mm,17.375mm) on Keep-Out Layer And Track (11.88mm,16.238mm)(12.304mm,15.814mm) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (11.175mm,15.65mm)(12.9mm,17.375mm) on Keep-Out Layer And Track (12.899mm,17.341mm)(13.364mm,16.875mm) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (11.175mm,15.65mm)(12.9mm,17.375mm) on Keep-Out Layer And Track (4.05mm,16mm)(15.958mm,16mm) on Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (11.175mm,15.65mm)(12.9mm,17.375mm) on Keep-Out Layer And Track (7.784mm,16.416mm)(16.816mm,16.416mm) on Bottom Layer 
+   Violation between Clearance Constraint: (0.004mm < 0.15mm) Between Track (11.45mm,29.75mm)(11.5mm,29.75mm) on Bottom Layer And Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (12.152mm,19.501mm)(14.072mm,17.582mm) on Top Layer And Track (12.9mm,17.375mm)(12.9mm,20.5mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (12.28mm,20.08mm)(14.425mm,17.936mm) on Top Layer And Track (12.9mm,17.375mm)(12.9mm,20.5mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (12.678mm,18.268mm)(13.718mm,17.228mm) on Top Layer And Track (12.9mm,17.375mm)(12.9mm,20.5mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (12.899mm,17.341mm)(13.364mm,16.875mm) on Top Layer And Track (12.9mm,17.375mm)(12.9mm,20.5mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (0.057mm < 0.15mm) Between Track (17.746mm,11.346mm)(20.164mm,13.764mm) on Top Layer And Via (17.775mm,11.985mm) from Top Layer to Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (18.429mm,14.471mm)(21.65mm,11.25mm) on Bottom Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (18.565mm,14.835mm)(21.725mm,11.675mm) on Bottom Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (19.977mm,8.848mm)(25.6mm,6mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (0.05mm < 0.15mm) Between Track (2.5mm,16.7mm)(5.175mm,14.025mm) on Keep-Out Layer And Track (4.974mm,13.65mm)(13.112mm,13.65mm) on Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer And Track (4.775mm,21.625mm)(4.775mm,22.425mm) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer And Track (4.775mm,22.425mm)(4.875mm,22.525mm) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer And Track (4.77mm,21.63mm)(4.77mm,23.47mm) on Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer And Track (4.88mm,24.02mm)(6.3mm,24.02mm) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer And Track (6.035mm,23.475mm)(6.035mm,23.508mm) on Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer And Track (6.035mm,23.475mm)(6.042mm,23.467mm) on Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer And Track (6.042mm,21.608mm)(6.042mm,23.467mm) on Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer And Track (6.055mm,23.325mm)(6.055mm,23.826mm) on Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer And Track (6.3mm,24.02mm)(6.305mm,24.015mm) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer And Track (6.65mm,31.3mm)(13.251mm,31.3mm) on Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer And Track (7.575mm,21.392mm)(7.575mm,24.838mm) on Top Layer 
+   Violation between Clearance Constraint: (0.139mm < 0.15mm) Between Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer And Track (9.3mm,27.741mm)(9.3mm,28.815mm) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer And Via (10.075mm,28.525mm) from Top Layer to Bottom Layer 
+   Violation between Clearance Constraint: (0.086mm < 0.15mm) Between Track (2.5mm,20.25mm)(14.875mm,32.625mm) on Keep-Out Layer And Via (4.775mm,21.625mm) from Top Layer to Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (20.436mm,11.925mm)(21.46mm,10.901mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (20.789mm,12.279mm)(23.146mm,9.921mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (20.789mm,16.521mm)(21.35mm,17.082mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (20.837mm,18.863mm)(21.438mm,18.263mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (21.035mm,9.05mm)(25.418mm,9.05mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (21.143mm,12.632mm)(23.362mm,10.412mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (0.107mm < 0.15mm) Between Track (21.143mm,16.168mm)(21.143mm,16.168mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (21.143mm,16.168mm)(21.7mm,16.725mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (21.188mm,18.962mm)(21.825mm,18.325mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (21.275mm,19.608mm)(21.275mm,26.517mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (21.35mm,17.082mm)(21.35mm,17.479mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (21.453mm,10.647mm)(21.46mm,10.653mm) on Top Layer And Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer And Track (21.46mm,10.653mm)(21.46mm,10.901mm) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer And Track (21.475mm,19.125mm)(22.062mm,18.538mm) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer And Track (21.496mm,12.986mm)(21.512mm,12.986mm) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer And Track (21.496mm,15.814mm)(21.496mm,15.814mm) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer And Track (21.496mm,15.814mm)(22.075mm,16.393mm) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer And Track (21.512mm,12.986mm)(22.473mm,12.025mm) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer And Track (21.6mm,19.904mm)(21.6mm,31.975mm) on Top Layer 
+   Violation between Clearance Constraint: (0.05mm < 0.15mm) Between Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer And Track (21.7mm,14.4mm)(21.787mm,14.4mm) on Top Layer 
+   Violation between Clearance Constraint: (0.05mm < 0.15mm) Between Track (21.45mm,7.2mm)(21.45mm,20.35mm) on Keep-Out Layer And Track (21.7mm,16.725mm)(21.7mm,17.629mm) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (24.056mm,10.125mm)(30.45mm,10.125mm) on Top Layer And Track (29.95mm,1.3mm)(29.95mm,21.3mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (24.075mm,10.65mm)(30mm,10.65mm) on Top Layer And Track (29.95mm,1.3mm)(29.95mm,21.3mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (24.75mm,30.385mm)(25.49mm,30.385mm) on Top Layer And Track (25.575mm,25.675mm)(25.575mm,31.325mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (25.49mm,30.385mm)(25.525mm,30.35mm) on Top Layer And Track (25.575mm,25.675mm)(25.575mm,31.325mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (25.525mm,27.2mm)(25.525mm,30.35mm) on Top Layer And Track (25.575mm,25.675mm)(25.575mm,31.325mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (25.525mm,27.2mm)(27.875mm,24.85mm) on Top Layer And Track (25.575mm,25.675mm)(25.575mm,31.325mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (25.525mm,30.35mm)(25.525mm,34.125mm) on Top Layer And Track (25.575mm,25.675mm)(25.575mm,31.325mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (25.575mm,25.675mm)(25.575mm,31.325mm) on Keep-Out Layer And Track (25.59mm,27.06mm)(25.59mm,34.125mm) on Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (25.575mm,25.675mm)(25.575mm,31.325mm) on Keep-Out Layer And Track (25.59mm,27.06mm)(27.8mm,24.85mm) on Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (25.575mm,25.675mm)(29.95mm,21.3mm) on Keep-Out Layer And Track (26.201mm,24.499mm)(27.475mm,23.225mm) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (25.575mm,25.675mm)(29.95mm,21.3mm) on Keep-Out Layer And Track (27.775mm,16.4mm)(27.775mm,22.9mm) on Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (25.575mm,25.675mm)(29.95mm,21.3mm) on Keep-Out Layer And Track (28.03mm,22.995mm)(30.55mm,20.475mm) on Top Layer 
+   Violation between Clearance Constraint: (0.139mm < 0.15mm) Between Track (25.575mm,25.675mm)(29.95mm,21.3mm) on Keep-Out Layer And Via (25.475mm,24.8mm) from Top Layer to Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (28.03mm,22.995mm)(30.55mm,20.475mm) on Top Layer And Track (29.95mm,1.3mm)(29.95mm,21.3mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (29.1mm,7.1mm)(29.655mm,7.1mm) on Top Layer And Track (29.95mm,1.3mm)(29.95mm,21.3mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (0.025mm < 0.15mm) Between Track (29.226mm,11.25mm)(29.6mm,11.25mm) on Top Layer And Track (29.95mm,1.3mm)(29.95mm,21.3mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (29.655mm,12.5mm)(29.655mm,12.652mm) on Top Layer And Track (29.95mm,1.3mm)(29.95mm,21.3mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (29.655mm,7.1mm)(29.655mm,7.61mm) on Top Layer And Track (29.95mm,1.3mm)(29.95mm,21.3mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (29.911mm,9.289mm)(31.8mm,7.4mm) on Top Layer And Track (29.95mm,1.3mm)(29.95mm,21.3mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (29.95mm,1.3mm)(29.95mm,21.3mm) on Keep-Out Layer And Track (30.24mm,11.515mm)(30.505mm,11.78mm) on Top Layer 
+   Violation between Clearance Constraint: (0.1mm < 0.15mm) Between Track (29.95mm,1.3mm)(29.95mm,21.3mm) on Keep-Out Layer And Track (30.55mm,18.675mm)(30.55mm,20.475mm) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (3.075mm,6.175mm)(4.914mm,8.014mm) on Bottom Layer And Track (5.175mm,3.575mm)(5.175mm,14.025mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (3.125mm,8.355mm)(7.092mm,12.322mm) on Bottom Layer And Track (5.175mm,3.575mm)(5.175mm,14.025mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (3.3mm,10.45mm)(5.456mm,12.606mm) on Bottom Layer And Track (5.175mm,3.575mm)(5.175mm,14.025mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (0.075mm < 0.15mm) Between Track (3.881mm,13.319mm)(4.6mm,12.6mm) on Top Layer And Track (5.175mm,3.575mm)(5.175mm,14.025mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (Collision < 0.15mm) Between Track (4.974mm,13.65mm)(13.112mm,13.65mm) on Bottom Layer And Track (5.175mm,3.575mm)(5.175mm,14.025mm) on Keep-Out Layer 
+   Violation between Clearance Constraint: (0.105mm < 0.15mm) Between Track (6.825mm,15.65mm)(11.175mm,15.65mm) on Keep-Out Layer And Track (8.225mm,15.2mm)(8.225mm,15.345mm) on Top Layer 
+   Violation between Clearance Constraint: (0.109mm < 0.15mm) Between Track (7.784mm,16.416mm)(16.816mm,16.416mm) on Bottom Layer And Via (10.4mm,16.9mm) from Top Layer to Bottom Layer 
+Rule Violations :168
+
+Processing Rule : Clearance Constraint (Gap=0.25mm) (OnLayer('Keep-Out Layer')),(InNet('No Net'))
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+   Violation between Short-Circuit Constraint: Between Area Fill (0.275mm,17.025mm) (2.075mm,20.45mm) on Top Layer And Track (1.225mm,19.475mm)(1.225mm,19.525mm) on Top Layer Location : [X = 49.55mm][Y = 38.877mm]
+   Violation between Short-Circuit Constraint: Between Area Fill (0.275mm,17.025mm) (2.075mm,20.45mm) on Top Layer And Track (1.225mm,19.475mm)(1.85mm,18.85mm) on Top Layer Location : [X = 49.787mm][Y = 38.54mm]
+   Violation between Short-Circuit Constraint: Between Area Fill (0.275mm,17.025mm) (2.075mm,20.45mm) on Top Layer And Track (1.85mm,18.85mm)(4.6mm,18.85mm) on Top Layer Location : [X = 50.099mm][Y = 38.227mm]
+Rule Violations :3
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net 3V3 Between Via (10.4mm,16.9mm) from Top Layer to Bottom Layer And Pad C16-1(10.405mm,16.2mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Via (0.625mm,28.5mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (1.394mm,26.644mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (1.394mm,30.356mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (27.125mm,28.5mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (27.894mm,26.644mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (27.894mm,30.356mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (29.75mm,25.875mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (29.75mm,31.125mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (3.25mm,25.875mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (3.25mm,31.125mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (31.606mm,26.644mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (31.606mm,30.356mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (32.375mm,28.5mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (5.106mm,26.644mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (5.106mm,30.356mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (5.875mm,28.5mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+Rule Violations :17
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.15mm) (Max=5mm) (Preferred=0.15mm) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.2mm) (Conductor Width=0.2mm) (Air Gap=0.2mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=0.2mm) (IsPAD)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=0.15mm) (All)
+Rule Violations :0
+
+Processing Rule : Acute Angle Constraint (Minimum=35.000) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.6mm) (Max=5.9mm) (IsPad)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.3mm) (Max=5.9mm) (IsVia)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.25mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0mm) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+   Violation between Net Antennae: Track (1.225mm,19.475mm)(1.85mm,18.85mm) on Top Layer 
+Rule Violations :1
+
+Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
+   Violation between Board Outline Clearance(Outline Edge): (0.188mm < 0.25mm) Between Board Edge And Region (0 hole(s)) Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.074mm < 0.25mm) Between Board Edge And Track (0.149mm,0.225mm)(0.201mm,16.625mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.051mm < 0.25mm) Between Board Edge And Track (0.149mm,0.225mm)(2.2mm,0.225mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.126mm < 0.25mm) Between Board Edge And Track (0.201mm,16.625mm)(2.2mm,16.625mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.051mm < 0.25mm) Between Board Edge And Track (2.2mm,0.225mm)(2.2mm,16.625mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.012mm < 0.25mm) Between Board Edge And Track (30.749mm,0.225mm)(30.801mm,16.625mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.012mm < 0.25mm) Between Board Edge And Track (30.749mm,0.225mm)(32.8mm,0.225mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.125mm < 0.25mm) Between Board Edge And Track (30.801mm,16.625mm)(32.8mm,16.625mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.125mm < 0.25mm) Between Board Edge And Track (32.8mm,0.225mm)(32.8mm,16.625mm) on Top Overlay 
+Rule Violations :9
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+
+Violations Detected : 198
+Waived Violations : 0
+Time Elapsed        : 00:00:02

@@ -1,0 +1,22 @@
+Change Component Footprint: Designator=X1 Old Footprint=PBD_8_2mm New Footprint=Header_8pin_2mm
+Change Component Footprint: Designator=X2 Old Footprint=PBD_8_2mm New Footprint=Header_8pin_2mm
+Change component parameters: Designator = "X1" ("X1"); Footprint = "PBD_8_2mm"; UniqueID = "\IPUNYBVG" ("\IPUNYBVG")
+Change component parameters (AddParameter): Name = "Parameter 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 3"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 4"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 5"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 6"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 7"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 8"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "System"; Value = "Connector"; VariantName = "[No Variations]"
+Change component parameters: Designator = "X2" ("X2"); Footprint = "PBD_8_2mm"; UniqueID = "\TPSGUSMN" ("\TPSGUSMN")
+Change component parameters (AddParameter): Name = "Parameter 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 3"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 4"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 5"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 6"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 7"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 8"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "System"; Value = "Connector"; VariantName = "[No Variations]"

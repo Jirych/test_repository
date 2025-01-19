@@ -1,0 +1,557 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD23\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">14.01.2025</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">20:33:12</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc" class="file"><acronym title="D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc">D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">2</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">57</td></tr>
+</table>
+</td>
+</table><a name="IDQJCU3FANEASFNW1MFYPT2JROVOOWV03QNSJ0NKDT5HNCSPGES2VO"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID4QEENMTRTURIF201AG1UVFGWQCKPCDMFSIRGGWZQ5PB3DPQFNSP">Zero hole size multi-layer pad(s) detected</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDNVH4GNH3DBDTDDLBQJVIDB5ONJJSN53RBHJS42LHTHMZS3YFZVHG">Multilayer Pads with 0 size Hole found</a></td>
+<td class="column2">1</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">2</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDKJFCZF14LEJ1I4Y3VZJ2GWRYACIBSKLQMJF1MOMO2P13PEQP3UON">Clearance Constraint (Gap=0.15mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDC0YDHMS4F4FBKYFP4ILYHN5WYNEZOOULFL2N24EEF2T01VOWHNIK">Clearance Constraint (Gap=0.2mm) (OnLayer('Keep-Out Layer')),(InNet('No Net'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJH2QKYWR10XKG5AR2QBOQHNLYPLYSYIPFM0Z0CM2QC4KTFNB11YL">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDGDK1NFDRPYAPIKYQ3UY4MXCP3O0IO0BDOLVD2DBHSA5BW5UY4M1N">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">19</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDVEPTKOVJGAPNBGAKPFJM5ZPWGHMG330QNHRZSQBVXT30HDUAGXAF">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDSAWHNPTXOEVNEGRZNHS1K0K4JEH4NFK0MPNP1RBFT10QFAHCD0H">Width Constraint (Min=0.15mm) (Max=5mm) (Preferred=0.25mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDWLABGWP5WU2HKMX41XJTX0NBL5FL5E25231GQM4JQ1P2AF3EAWL">Power Plane Connect Rule(Relief Connect )(Expansion=0.2mm) (Conductor Width=0.2mm) (Air Gap=0.2mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDLKFDHS2SQ34HNJR22K2A5WQZL4NMLFJGEIW4CJHSI012RVU1T">Minimum Annular Ring (Minimum=0.2mm) (IsPAD)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDEZSE4LCJ33DQJOXHZXYAMI1DOJNUHGCLDWZPQAIHMUVWF33YL5AL">Minimum Annular Ring (Minimum=0.15mm) (All)</a></td>
+<td class="column2">12</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDLGV5XBRXBDYMCYEFPOGV3U55PY4WRB2S0X3M2EQFBB0MLK3CWK">Acute Angle Constraint (Minimum=35.000) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDTZDD5JMEBG044ORLWEZ11FR4KIDWFO0JHIQI2COOCMVVKHEYAE">Hole Size Constraint (Min=0.6mm) (Max=5.9mm) (IsPad)</a></td>
+<td class="column2">12</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDSTQJ4ZNW2UPXNMUZDWJCD20K1C515NOFJFIQGKIWE54UYK0OMXCO">Hole Size Constraint (Min=0.3mm) (Max=5.9mm) (IsVia)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID0D1HAN1HMMAIMAZZDZIG3WXCVJBGGZJXMQB2U3IW44M5UIYMNSGG">Hole To Hole Clearance (Gap=0.25mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDF1ORCZ0D2Y0GPADXVHMR0KCOPF43DBQITIJITREW5J1HGVL0PWHH">Minimum Solder Mask Sliver (Gap=0.15mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID5SQBMVESEH0PLZ1DD3DZHHOX2BJZD3YNC0K24XKVQKB4CV45XJP">Silk To Solder Mask (Clearance=0mm) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDOXC23KZNQLAPN313Q15XC1Y2TI123CB3OKTEK2PNYT23TOASJQ2B">Silk to Silk (Clearance=0mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAXL1F1RT1TUYFGYYOS5SXAQEYBDE2UIINV2IKRCHE5M541HA0AOI">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID1GYZN1CTML2MLAPGNUYNZHVCXPUMGKMLX00WPHHLUP5TYVSA4O5J">Board Clearance Constraint (Gap=0mm) (All)</a></td>
+<td class="column2">14</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBRGHXVIHDPBBJQ4LZE3GLLCP2DRWDHFVOCBKFGD4INGUVMFDGBJ">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">57</td>
+</tr>
+</table><br><a name="IDP4LM1N2ZVKSJIOXSV0FXZMDNUOK4CQ1G2SVS42I2ZAB4NCTA3ZDC"><h2>Warnings</h2></a><a name="ID4QEENMTRTURIF201AG1UVFGWQCKPCDMFSIRGGWZQ5PB3DPQFNSP"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="warning">Zero hole size multi-layer pad(s) detected</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2192.85mil|Location2.X=2342.583mil|Location1.Y=2391.669mil|Location2.Y=2498.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2192.85mil|Location2.X=2342.583mil|Location1.Y=2391.669mil|Location2.Y=2498.094mil|Absolute=True">Pad DA1-1(57.6mm,62.1mm) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1986mil|Location2.X=3250.22mil|Location1.Y=1993.874mil|Location2.Y=2938.055mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1986mil|Location2.X=3250.22mil|Location1.Y=1993.874mil|Location2.Y=2938.055mil|Absolute=True">Net GND</acronym></a></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDNVH4GNH3DBDTDDLBQJVIDB5ONJJSN53RBHJS42LHTHMZS3YFZVHG"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="warning">Multilayer Pads with 0 size Hole found</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2192.85mil|Location2.X=2342.583mil|Location1.Y=2391.669mil|Location2.Y=2498.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2192.85mil|Location2.X=2342.583mil|Location1.Y=2391.669mil|Location2.Y=2498.094mil|Absolute=True">Pad DA1-1(57.6mm,62.1mm) on Multi-Layer</acronym></a></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDGDK1NFDRPYAPIKYQ3UY4MXCP3O0IO0BDOLVD2DBHSA5BW5UY4M1N"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3190.724mil|Location2.X=3250.22mil|Location1.Y=2151.354mil|Location2.Y=2604.551mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3190.724mil|Location2.X=3250.22mil|Location1.Y=2151.354mil|Location2.Y=2604.551mil|Absolute=True">Un-Routed Net Constraint: Net +5V Between Pad X1-6(81.8mm,55.4mm) on Multi-Layer And Pad X1-1(81.8mm,65.4mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2002.362mil|Location2.X=2312.205mil|Location1.Y=2352.756mil|Location2.Y=2405.774mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2002.362mil|Location2.X=2312.205mil|Location1.Y=2352.756mil|Location2.Y=2405.774mil|Absolute=True">Un-Routed Net Constraint: Net +5V Between Pad XS4-3(53.4mm,62.3mm) on Multi-Layer And Track (56.19mm,58.567mm)(57.683mm,58.567mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2184.121mil|Location2.X=3243.701mil|Location1.Y=2187.402mil|Location2.Y=2306.693mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2184.121mil|Location2.X=3243.701mil|Location1.Y=2187.402mil|Location2.Y=2306.693mil|Absolute=True">Un-Routed Net Constraint: Net +5V Between Track (58.017mm,58.1mm)(58.083mm,58.167mm) on Bottom Layer And Track (79.85mm,56.05mm)(80.5mm,55.4mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1979.331mil|Location2.X=2006.89mil|Location1.Y=3076.772mil|Location2.Y=3104.331mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1979.331mil|Location2.X=2006.89mil|Location1.Y=3076.772mil|Location2.Y=3104.331mil|Absolute=True">Un-Routed Net Constraint: Via (50.625mm,78.5mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2009.6mil|Location2.X=2037.159mil|Location1.Y=3003.695mil|Location2.Y=3031.254mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2009.6mil|Location2.X=2037.159mil|Location1.Y=3003.695mil|Location2.Y=3031.254mil|Absolute=True">Un-Routed Net Constraint: Via (51.394mm,76.644mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2009.6mil|Location2.X=2037.159mil|Location1.Y=3149.849mil|Location2.Y=3177.408mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2009.6mil|Location2.X=2037.159mil|Location1.Y=3149.849mil|Location2.Y=3177.408mil|Absolute=True">Un-Routed Net Constraint: Via (51.394mm,80.356mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2082.677mil|Location2.X=2110.236mil|Location1.Y=2973.425mil|Location2.Y=3000.984mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2082.677mil|Location2.X=2110.236mil|Location1.Y=2973.425mil|Location2.Y=3000.984mil|Absolute=True">Un-Routed Net Constraint: Via (53.25mm,75.875mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2082.677mil|Location2.X=2110.236mil|Location1.Y=3180.118mil|Location2.Y=3207.677mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2082.677mil|Location2.X=2110.236mil|Location1.Y=3180.118mil|Location2.Y=3207.677mil|Absolute=True">Un-Routed Net Constraint: Via (53.25mm,81.125mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2155.754mil|Location2.X=2183.313mil|Location1.Y=3003.695mil|Location2.Y=3031.254mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2155.754mil|Location2.X=2183.313mil|Location1.Y=3003.695mil|Location2.Y=3031.254mil|Absolute=True">Un-Routed Net Constraint: Via (55.106mm,76.644mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2155.754mil|Location2.X=2183.313mil|Location1.Y=3149.849mil|Location2.Y=3177.407mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2155.754mil|Location2.X=2183.313mil|Location1.Y=3149.849mil|Location2.Y=3177.407mil|Absolute=True">Un-Routed Net Constraint: Via (55.106mm,80.356mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2186.024mil|Location2.X=2213.583mil|Location1.Y=3076.772mil|Location2.Y=3104.331mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2186.024mil|Location2.X=2213.583mil|Location1.Y=3076.772mil|Location2.Y=3104.331mil|Absolute=True">Un-Routed Net Constraint: Via (55.875mm,78.5mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3022.638mil|Location2.X=3050.197mil|Location1.Y=3076.772mil|Location2.Y=3104.331mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3022.638mil|Location2.X=3050.197mil|Location1.Y=3076.772mil|Location2.Y=3104.331mil|Absolute=True">Un-Routed Net Constraint: Via (77.125mm,78.5mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3052.907mil|Location2.X=3080.466mil|Location1.Y=3003.695mil|Location2.Y=3031.254mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3052.907mil|Location2.X=3080.466mil|Location1.Y=3003.695mil|Location2.Y=3031.254mil|Absolute=True">Un-Routed Net Constraint: Via (77.894mm,76.644mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3052.907mil|Location2.X=3080.466mil|Location1.Y=3149.849mil|Location2.Y=3177.408mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3052.907mil|Location2.X=3080.466mil|Location1.Y=3149.849mil|Location2.Y=3177.408mil|Absolute=True">Un-Routed Net Constraint: Via (77.894mm,80.356mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3125.984mil|Location2.X=3153.543mil|Location1.Y=2973.425mil|Location2.Y=3000.984mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3125.984mil|Location2.X=3153.543mil|Location1.Y=2973.425mil|Location2.Y=3000.984mil|Absolute=True">Un-Routed Net Constraint: Via (79.75mm,75.875mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3125.984mil|Location2.X=3153.543mil|Location1.Y=3180.118mil|Location2.Y=3207.677mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3125.984mil|Location2.X=3153.543mil|Location1.Y=3180.118mil|Location2.Y=3207.677mil|Absolute=True">Un-Routed Net Constraint: Via (79.75mm,81.125mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3199.061mil|Location2.X=3226.62mil|Location1.Y=3003.695mil|Location2.Y=3031.254mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3199.061mil|Location2.X=3226.62mil|Location1.Y=3003.695mil|Location2.Y=3031.254mil|Absolute=True">Un-Routed Net Constraint: Via (81.606mm,76.644mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3199.061mil|Location2.X=3226.62mil|Location1.Y=3149.849mil|Location2.Y=3177.407mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3199.061mil|Location2.X=3226.62mil|Location1.Y=3149.849mil|Location2.Y=3177.407mil|Absolute=True">Un-Routed Net Constraint: Via (81.606mm,80.356mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3229.331mil|Location2.X=3256.89mil|Location1.Y=3076.772mil|Location2.Y=3104.331mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3229.331mil|Location2.X=3256.89mil|Location1.Y=3076.772mil|Location2.Y=3104.331mil|Absolute=True">Un-Routed Net Constraint: Via (82.375mm,78.5mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDEZSE4LCJ33DQJOXHZXYAMI1DOJNUHGCLDWZPQAIHMUVWF33YL5AL"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Annular Ring (Minimum=0.15mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2210.13mil|Location2.X=2215.067mil|Location1.Y=2414.854mil|Location2.Y=2419.791mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2210.13mil|Location2.X=2215.067mil|Location1.Y=2414.854mil|Location2.Y=2419.791mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad DA1-1(56.2mm,61.4mm) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2210.13mil|Location2.X=2215.067mil|Location1.Y=2442.413mil|Location2.Y=2447.35mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2210.13mil|Location2.X=2215.067mil|Location1.Y=2442.413mil|Location2.Y=2447.35mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad DA1-1(56.2mm,62.1mm) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2210.13mil|Location2.X=2215.067mil|Location1.Y=2469.972mil|Location2.Y=2474.909mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2210.13mil|Location2.X=2215.067mil|Location1.Y=2469.972mil|Location2.Y=2474.909mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad DA1-1(56.2mm,62.8mm) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2245.563mil|Location2.X=2250.5mil|Location1.Y=2414.854mil|Location2.Y=2419.791mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2245.563mil|Location2.X=2250.5mil|Location1.Y=2414.854mil|Location2.Y=2419.791mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad DA1-1(57.1mm,61.4mm) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2245.563mil|Location2.X=2250.5mil|Location1.Y=2442.413mil|Location2.Y=2447.35mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2245.563mil|Location2.X=2250.5mil|Location1.Y=2442.413mil|Location2.Y=2447.35mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad DA1-1(57.1mm,62.1mm) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2245.563mil|Location2.X=2250.5mil|Location1.Y=2469.972mil|Location2.Y=2474.909mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2245.563mil|Location2.X=2250.5mil|Location1.Y=2469.972mil|Location2.Y=2474.909mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad DA1-1(57.1mm,62.8mm) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2316.429mil|Location2.X=2321.366mil|Location1.Y=2414.854mil|Location2.Y=2419.791mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2316.429mil|Location2.X=2321.366mil|Location1.Y=2414.854mil|Location2.Y=2419.791mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad DA1-1(58.9mm,61.4mm) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2316.429mil|Location2.X=2321.366mil|Location1.Y=2442.413mil|Location2.Y=2447.35mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2316.429mil|Location2.X=2321.366mil|Location1.Y=2442.413mil|Location2.Y=2447.35mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad DA1-1(58.9mm,62.1mm) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2316.429mil|Location2.X=2321.366mil|Location1.Y=2469.972mil|Location2.Y=2474.909mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2316.429mil|Location2.X=2321.366mil|Location1.Y=2469.972mil|Location2.Y=2474.909mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad DA1-1(58.9mm,62.8mm) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2280.996mil|Location2.X=2285.933mil|Location1.Y=2414.854mil|Location2.Y=2419.791mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2280.996mil|Location2.X=2285.933mil|Location1.Y=2414.854mil|Location2.Y=2419.791mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad DA1-1(58mm,61.4mm) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2280.996mil|Location2.X=2285.933mil|Location1.Y=2442.413mil|Location2.Y=2447.35mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2280.996mil|Location2.X=2285.933mil|Location1.Y=2442.413mil|Location2.Y=2447.35mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad DA1-1(58mm,62.1mm) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2280.996mil|Location2.X=2285.933mil|Location1.Y=2469.972mil|Location2.Y=2474.909mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2280.996mil|Location2.X=2285.933mil|Location1.Y=2469.972mil|Location2.Y=2474.909mil|Absolute=True">Minimum Annular Ring: (No Ring) Pad DA1-1(58mm,62.8mm) on Multi-Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDTZDD5JMEBG044ORLWEZ11FR4KIDWFO0JHIQI2COOCMVVKHEYAE"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Hole Size Constraint (Min=0.6mm) (Max=5.9mm) (IsPad)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2204.099mil|Location2.X=2221.097mil|Location1.Y=2408.824mil|Location2.Y=2425.822mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2204.099mil|Location2.X=2221.097mil|Location1.Y=2408.824mil|Location2.Y=2425.822mil|Absolute=True">Hole Size Constraint: (0.4mm &lt; 0.6mm) Pad DA1-1(56.2mm,61.4mm) on Multi-Layer Actual Hole Size = 0.4mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2204.099mil|Location2.X=2221.097mil|Location1.Y=2436.383mil|Location2.Y=2453.381mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2204.099mil|Location2.X=2221.097mil|Location1.Y=2436.383mil|Location2.Y=2453.381mil|Absolute=True">Hole Size Constraint: (0.4mm &lt; 0.6mm) Pad DA1-1(56.2mm,62.1mm) on Multi-Layer Actual Hole Size = 0.4mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2204.099mil|Location2.X=2221.097mil|Location1.Y=2463.942mil|Location2.Y=2480.94mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2204.099mil|Location2.X=2221.097mil|Location1.Y=2463.942mil|Location2.Y=2480.94mil|Absolute=True">Hole Size Constraint: (0.4mm &lt; 0.6mm) Pad DA1-1(56.2mm,62.8mm) on Multi-Layer Actual Hole Size = 0.4mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2239.532mil|Location2.X=2256.53mil|Location1.Y=2408.824mil|Location2.Y=2425.822mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2239.532mil|Location2.X=2256.53mil|Location1.Y=2408.824mil|Location2.Y=2425.822mil|Absolute=True">Hole Size Constraint: (0.4mm &lt; 0.6mm) Pad DA1-1(57.1mm,61.4mm) on Multi-Layer Actual Hole Size = 0.4mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2239.532mil|Location2.X=2256.53mil|Location1.Y=2436.383mil|Location2.Y=2453.381mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2239.532mil|Location2.X=2256.53mil|Location1.Y=2436.383mil|Location2.Y=2453.381mil|Absolute=True">Hole Size Constraint: (0.4mm &lt; 0.6mm) Pad DA1-1(57.1mm,62.1mm) on Multi-Layer Actual Hole Size = 0.4mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2239.532mil|Location2.X=2256.53mil|Location1.Y=2463.942mil|Location2.Y=2480.94mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2239.532mil|Location2.X=2256.53mil|Location1.Y=2463.942mil|Location2.Y=2480.94mil|Absolute=True">Hole Size Constraint: (0.4mm &lt; 0.6mm) Pad DA1-1(57.1mm,62.8mm) on Multi-Layer Actual Hole Size = 0.4mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2310.399mil|Location2.X=2327.397mil|Location1.Y=2408.824mil|Location2.Y=2425.822mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2310.399mil|Location2.X=2327.397mil|Location1.Y=2408.824mil|Location2.Y=2425.822mil|Absolute=True">Hole Size Constraint: (0.4mm &lt; 0.6mm) Pad DA1-1(58.9mm,61.4mm) on Multi-Layer Actual Hole Size = 0.4mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2310.399mil|Location2.X=2327.397mil|Location1.Y=2436.383mil|Location2.Y=2453.381mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2310.399mil|Location2.X=2327.397mil|Location1.Y=2436.383mil|Location2.Y=2453.381mil|Absolute=True">Hole Size Constraint: (0.4mm &lt; 0.6mm) Pad DA1-1(58.9mm,62.1mm) on Multi-Layer Actual Hole Size = 0.4mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2310.399mil|Location2.X=2327.397mil|Location1.Y=2463.942mil|Location2.Y=2480.94mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2310.399mil|Location2.X=2327.397mil|Location1.Y=2463.942mil|Location2.Y=2480.94mil|Absolute=True">Hole Size Constraint: (0.4mm &lt; 0.6mm) Pad DA1-1(58.9mm,62.8mm) on Multi-Layer Actual Hole Size = 0.4mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2274.966mil|Location2.X=2291.964mil|Location1.Y=2408.824mil|Location2.Y=2425.822mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2274.966mil|Location2.X=2291.964mil|Location1.Y=2408.824mil|Location2.Y=2425.822mil|Absolute=True">Hole Size Constraint: (0.4mm &lt; 0.6mm) Pad DA1-1(58mm,61.4mm) on Multi-Layer Actual Hole Size = 0.4mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2274.966mil|Location2.X=2291.964mil|Location1.Y=2436.383mil|Location2.Y=2453.381mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2274.966mil|Location2.X=2291.964mil|Location1.Y=2436.383mil|Location2.Y=2453.381mil|Absolute=True">Hole Size Constraint: (0.4mm &lt; 0.6mm) Pad DA1-1(58mm,62.1mm) on Multi-Layer Actual Hole Size = 0.4mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2274.966mil|Location2.X=2291.964mil|Location1.Y=2463.942mil|Location2.Y=2480.94mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2274.966mil|Location2.X=2291.964mil|Location1.Y=2463.942mil|Location2.Y=2480.94mil|Absolute=True">Hole Size Constraint: (0.4mm &lt; 0.6mm) Pad DA1-1(58mm,62.8mm) on Multi-Layer Actual Hole Size = 0.4mm</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID1GYZN1CTML2MLAPGNUYNZHVCXPUMGKMLX00WPHHLUP5TYVSA4O5J"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Board Clearance Constraint (Gap=0mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3258.479mil|Location2.X=3269.572mil|Location1.Y=2616.009mil|Location2.Y=2627.101mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3258.479mil|Location2.X=3269.572mil|Location1.Y=2616.009mil|Location2.Y=2627.101mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.188mm &lt; 0.25mm) Between Board Edge And Region (0 hole(s)) Bottom Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1965.418mil|Location2.X=1976.51mil|Location1.Y=1971.816mil|Location2.Y=1982.908mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1965.418mil|Location2.X=1976.51mil|Location1.Y=1971.816mil|Location2.Y=1982.908mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.125mm &lt; 0.25mm) Between Board Edge And Track (50.2mm,50.225mm)(50.2mm,66.625mm) on Bottom Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2054.211mil|Location2.X=2065.304mil|Location1.Y=1970.044mil|Location2.Y=1984.216mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2054.211mil|Location2.X=2065.304mil|Location1.Y=1970.044mil|Location2.Y=1984.216mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.012mm &lt; 0.25mm) Between Board Edge And Track (50.2mm,50.225mm)(52.251mm,50.225mm) on Bottom Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1965.418mil|Location2.X=1976.51mil|Location1.Y=2617.485mil|Location2.Y=2628.578mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1965.418mil|Location2.X=1976.51mil|Location1.Y=2617.485mil|Location2.Y=2628.578mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.125mm &lt; 0.25mm) Between Board Edge And Track (50.2mm,66.625mm)(52.199mm,66.625mm) on Bottom Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2054.211mil|Location2.X=2065.304mil|Location1.Y=1970.044mil|Location2.Y=1984.216mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2054.211mil|Location2.X=2065.304mil|Location1.Y=1970.044mil|Location2.Y=1984.216mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.012mm &lt; 0.25mm) Between Board Edge And Track (52.199mm,66.625mm)(52.251mm,50.225mm) on Bottom Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2930.141mil|Location2.X=2941.233mil|Location1.Y=2827.791mil|Location2.Y=2842.795mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2930.141mil|Location2.X=2941.233mil|Location1.Y=2827.791mil|Location2.Y=2842.795mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.149mm &lt; 0.25mm) Between Board Edge And Track (74.7mm,67.9mm)(74.7mm,71.9mm) on Bottom Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2930.141mil|Location2.X=2941.233mil|Location1.Y=2827.791mil|Location2.Y=2842.795mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2930.141mil|Location2.X=2941.233mil|Location1.Y=2827.791mil|Location2.Y=2842.795mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.149mm &lt; 0.25mm) Between Board Edge And Track (74.7mm,71.9mm)(77.7mm,71.9mm) on Bottom Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3257.741mil|Location2.X=3268.834mil|Location1.Y=2667.682mil|Location2.Y=2678.774mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3257.741mil|Location2.X=3268.834mil|Location1.Y=2667.682mil|Location2.Y=2678.774mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.225mm &lt; 0.25mm) Between Board Edge And Track (79.7mm,67.9mm)(82.7mm,67.9mm) on Bottom Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3257.741mil|Location2.X=3268.834mil|Location1.Y=2825.162mil|Location2.Y=2836.255mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3257.741mil|Location2.X=3268.834mil|Location1.Y=2825.162mil|Location2.Y=2836.255mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.225mm &lt; 0.25mm) Between Board Edge And Track (79.7mm,71.9mm)(82.7mm,71.9mm) on Bottom Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3172.276mil|Location2.X=3183.369mil|Location1.Y=1966.637mil|Location2.Y=1980.685mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3172.276mil|Location2.X=3183.369mil|Location1.Y=1966.637mil|Location2.Y=1980.685mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.051mm &lt; 0.25mm) Between Board Edge And Track (80.8mm,50.225mm)(80.8mm,66.625mm) on Bottom Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3172.276mil|Location2.X=3183.369mil|Location1.Y=1966.637mil|Location2.Y=1980.685mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3172.276mil|Location2.X=3183.369mil|Location1.Y=1966.637mil|Location2.Y=1980.685mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.051mm &lt; 0.25mm) Between Board Edge And Track (80.8mm,50.225mm)(82.851mm,50.225mm) on Bottom Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3259.696mil|Location2.X=3270.788mil|Location1.Y=2617.485mil|Location2.Y=2628.578mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3259.696mil|Location2.X=3270.788mil|Location1.Y=2617.485mil|Location2.Y=2628.578mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.126mm &lt; 0.25mm) Between Board Edge And Track (80.8mm,66.625mm)(82.799mm,66.625mm) on Bottom Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3260.705mil|Location2.X=3271.797mil|Location1.Y=1971.816mil|Location2.Y=1982.908mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3260.705mil|Location2.X=3271.797mil|Location1.Y=1971.816mil|Location2.Y=1982.908mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.074mm &lt; 0.25mm) Between Board Edge And Track (82.799mm,66.625mm)(82.851mm,50.225mm) on Bottom Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\_WORK\_%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%8B\%D0%A0%D0%B0%D1%84%D0%B0%D1%8D%D0%BB%D1%8C\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3257.741mil|Location2.X=3268.834mil|Location1.Y=2825.162mil|Location2.Y=2836.255mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3257.741mil|Location2.X=3268.834mil|Location1.Y=2825.162mil|Location2.Y=2836.255mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.225mm &lt; 0.25mm) Between Board Edge And Track (82.7mm,67.9mm)(82.7mm,71.9mm) on Bottom Overlay </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

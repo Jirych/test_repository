@@ -1,0 +1,105 @@
+Removed Pin From Net: NetName=M\C\L\R\ Pin=DD2-7
+Change Component Footprint: Designator=C10 Old Footprint=0402_CAP New Footprint=0603_CAP
+Change Component Footprint: Designator=C12 Old Footprint=0402_CAP New Footprint=0603_CAP
+Change Component Footprint: Designator=R3 Old Footprint=0402_res New Footprint=0603_RES
+Change Component Footprint: Designator=R11 Old Footprint=0402_res New Footprint=0603_RES
+Change Component Footprint: Designator=R14 Old Footprint=0402_res New Footprint=0603_RES
+Change Component Footprint: Designator=R21 Old Footprint=0603_RES New Footprint=0402_res
+Change Component Footprint: Designator=R27 Old Footprint=0603_RES New Footprint=0402_res
+Change Component Comment : Designator=R2 Old Comment=4k7 New Comment=5k1
+Change Component Comment : Designator=R4 Old Comment=4k7 New Comment=5k1
+Change component parameters: Designator = "C10" ("C10"); Footprint = "0402_CAP"; UniqueID = "\LCOQBDDZ" ("\LCOQBDDZ")
+Change component parameters (AddParameter): Name = "Case"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temp"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "URL"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "2.2u"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueDescription"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueManufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueManufacturerPartNumber"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueType"; Value = "Конденсатор"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "C12" ("C12"); Footprint = "0402_CAP"; UniqueID = "\KXUXYPME" ("\KXUXYPME")
+Change component parameters (AddParameter): Name = "Case"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temp"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "URL"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "4.7u"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueDescription"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueManufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueManufacturerPartNumber"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueType"; Value = "Конденсатор"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R2" ("R2"); Footprint = "0402_res"; UniqueID = "\TDFPWCKL" ("\TDFPWCKL")
+Change component parameters (AddParameter): Name = "Case"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temp"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "URL"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "5k1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueDescription"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueManufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueManufacturerPartNumber"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueType"; Value = "Резистор"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R4" ("R4"); Footprint = "0402_res"; UniqueID = "\EXNSCNAD" ("\EXNSCNAD")
+Change component parameters (AddParameter): Name = "Case"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temp"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "URL"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "5k1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueDescription"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueManufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueManufacturerPartNumber"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueType"; Value = "Резистор"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R21" ("R21"); Footprint = "0603_RES"; UniqueID = "\ZEEEGXKH" ("\ZEEEGXKH")
+Change component parameters (AddParameter): Name = "Case"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temp"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "URL"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueDescription"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueManufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueManufacturerPartNumber"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueType"; Value = "Резистор"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R27" ("R27"); Footprint = "0603_RES"; UniqueID = "\IXMRFAIT" ("\IXMRFAIT")
+Change component parameters (AddParameter): Name = "Case"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temp"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "URL"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueDescription"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueManufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueManufacturerPartNumber"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueType"; Value = "Резистор"; VariantName = "[No Variations]"
+Change Net Name : Old Net Name=M\C\L\R\ New Net Name=NetC20_1
+Added Pin To Net: NetName=M\C\L\R\ Pin=DD2-7
+Added Pin To Net: NetName=M\C\L\R\ Pin=R33-1
+Added Net: Name=M\C\L\R\
+Added Member To Class: ClassName=Drive Member=Component C7 0.1u
+Added Member To Class: ClassName=Drive Member=Component C8 0.1u
+Added Member To Class: ClassName=Drive Member=Component C11 0.1u
+Added Member To Class: ClassName=Drive Member=Component C12 4.7u
+Added Member To Class: ClassName=Drive Member=Component C13 0.1u
+Added Member To Class: ClassName=Drive Member=Component C14 0.1u
+Added Member To Class: ClassName=Drive Member=Component C16 0.1u
+Added Member To Class: ClassName=Drive Member=Component C17 18p
+Added Member To Class: ClassName=Drive Member=Component C19 4700p
+Added Member To Class: ClassName=Drive Member=Component R3 120
+Added Member To Class: ClassName=Drive Member=Component R27 0
+Added Member To Class: ClassName=Drive Member=Component XS2 SSI
+Added Member To Class: ClassName=Drive Member=Component XS3 I2C or UART
+Added Member To Class: ClassName=Drive Member=Component XS5 SPI
+Added Member To Class: ClassName=Drive Member=Component XS7 SWD

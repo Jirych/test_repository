@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=TTL_B_OUT Pin=X1-4
+Added Pin To Net: NetName=+5V Pin=X1-1
+Added Pin To Net: NetName=TTL_B_OUT Pin=X1-2
+Added Pin To Net: NetName=GND Pin=X1-4
+Added Member To Class: ClassName=powerful Member=Component C6 22x35
+Added Member To Class: ClassName=powerful Member=Component C8 22x35
+Added Member To Class: ClassName=powerful Member=Component C10 15p
+Added Member To Class: ClassName=powerful Member=Component C12 100n
+Added Member To Class: ClassName=powerful Member=Component R4 18k
+Added Member To Class: ClassName=powerful Member=Component R5 10k
+Added Member To Class: ClassName=powerful Member=Component R10 22
+Added Member To Class: ClassName=powerful Member=Component R11 22

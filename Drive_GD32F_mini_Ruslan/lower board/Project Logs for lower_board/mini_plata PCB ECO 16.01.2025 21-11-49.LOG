@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=GND Pin=XS6-3
+Change Component Footprint: Designator=XS6 Old Footprint=PH3_2mm New Footprint=STEP_2.54mm 2X1
+Change component parameters: Designator = "XS6" ("XS6"); Footprint = "PH3_2mm"; UniqueID = "\QPBJVLXK" ("\QPBJVLXK")

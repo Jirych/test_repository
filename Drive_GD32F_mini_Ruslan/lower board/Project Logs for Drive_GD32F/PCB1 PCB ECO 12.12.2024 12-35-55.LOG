@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=GND Pin=XS2-5
+Added Pin To Net: NetName=+5V Pin=XS2-5
+Added Pin To Net: NetName=GND Pin=XS2-6
+Added Room: Name=Ñץולא1

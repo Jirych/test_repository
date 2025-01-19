@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=TTL_B_IN_GPIO Pin=X1-4
+Removed Pin From Net: NetName=TTL_A_IN_GPIO Pin=X1-5
+Removed Pin From Net: NetName=ENC_B Pin=X2-1
+Removed Pin From Net: NetName=ENC_A Pin=X2-2
+Added Pin To Net: NetName=ENC_A Pin=X2-1
+Added Pin To Net: NetName=ENC_B Pin=X2-2
+Added Pin To Net: NetName=TTL_B_IN_GPIO Pin=X2-5
+Added Pin To Net: NetName=TTL_A_IN_GPIO Pin=X2-6

@@ -1,0 +1,129 @@
+Protel Design System Design Rule Check
+PCB File : D:\_WORK\_Студенты\Рафаэль\Drive_GD32F_mini (2)\Drive_GD32F_mini\upper_board\upper_PCB.PcbDoc
+Date     : 14.01.2025
+Time     : 20:33:12
+
+WARNING: Zero hole size multi-layer pad(s) detected
+   Pad DA1-1(57.6mm,62.1mm) on Multi-Layer on Net GND
+
+WARNING: Multilayer Pads with 0 size Hole found
+   Pad DA1-1(57.6mm,62.1mm) on Multi-Layer
+
+Processing Rule : Clearance Constraint (Gap=0.15mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.2mm) (OnLayer('Keep-Out Layer')),(InNet('No Net'))
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net +5V Between Pad X1-6(81.8mm,55.4mm) on Multi-Layer And Pad X1-1(81.8mm,65.4mm) on Multi-Layer 
+   Violation between Un-Routed Net Constraint: Net +5V Between Pad XS4-3(53.4mm,62.3mm) on Multi-Layer And Track (56.19mm,58.567mm)(57.683mm,58.567mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net +5V Between Track (58.017mm,58.1mm)(58.083mm,58.167mm) on Bottom Layer And Track (79.85mm,56.05mm)(80.5mm,55.4mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Via (50.625mm,78.5mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (51.394mm,76.644mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (51.394mm,80.356mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (53.25mm,75.875mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (53.25mm,81.125mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (55.106mm,76.644mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (55.106mm,80.356mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (55.875mm,78.5mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (77.125mm,78.5mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (77.894mm,76.644mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (77.894mm,80.356mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (79.75mm,75.875mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (79.75mm,81.125mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (81.606mm,76.644mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (81.606mm,80.356mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+   Violation between Un-Routed Net Constraint: Via (82.375mm,78.5mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
+Rule Violations :19
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.15mm) (Max=5mm) (Preferred=0.25mm) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.2mm) (Conductor Width=0.2mm) (Air Gap=0.2mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=0.2mm) (IsPAD)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=0.15mm) (All)
+   Violation between Minimum Annular Ring: (No Ring) Pad DA1-1(56.2mm,61.4mm) on Multi-Layer (Annular Ring missing on Top Layer)
+   Violation between Minimum Annular Ring: (No Ring) Pad DA1-1(56.2mm,62.1mm) on Multi-Layer (Annular Ring missing on Top Layer)
+   Violation between Minimum Annular Ring: (No Ring) Pad DA1-1(56.2mm,62.8mm) on Multi-Layer (Annular Ring missing on Top Layer)
+   Violation between Minimum Annular Ring: (No Ring) Pad DA1-1(57.1mm,61.4mm) on Multi-Layer (Annular Ring missing on Top Layer)
+   Violation between Minimum Annular Ring: (No Ring) Pad DA1-1(57.1mm,62.1mm) on Multi-Layer (Annular Ring missing on Top Layer)
+   Violation between Minimum Annular Ring: (No Ring) Pad DA1-1(57.1mm,62.8mm) on Multi-Layer (Annular Ring missing on Top Layer)
+   Violation between Minimum Annular Ring: (No Ring) Pad DA1-1(58.9mm,61.4mm) on Multi-Layer (Annular Ring missing on Top Layer)
+   Violation between Minimum Annular Ring: (No Ring) Pad DA1-1(58.9mm,62.1mm) on Multi-Layer (Annular Ring missing on Top Layer)
+   Violation between Minimum Annular Ring: (No Ring) Pad DA1-1(58.9mm,62.8mm) on Multi-Layer (Annular Ring missing on Top Layer)
+   Violation between Minimum Annular Ring: (No Ring) Pad DA1-1(58mm,61.4mm) on Multi-Layer (Annular Ring missing on Top Layer)
+   Violation between Minimum Annular Ring: (No Ring) Pad DA1-1(58mm,62.1mm) on Multi-Layer (Annular Ring missing on Top Layer)
+   Violation between Minimum Annular Ring: (No Ring) Pad DA1-1(58mm,62.8mm) on Multi-Layer (Annular Ring missing on Top Layer)
+Rule Violations :12
+
+Processing Rule : Acute Angle Constraint (Minimum=35.000) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.6mm) (Max=5.9mm) (IsPad)
+   Violation between Hole Size Constraint: (0.4mm < 0.6mm) Pad DA1-1(56.2mm,61.4mm) on Multi-Layer Actual Hole Size = 0.4mm
+   Violation between Hole Size Constraint: (0.4mm < 0.6mm) Pad DA1-1(56.2mm,62.1mm) on Multi-Layer Actual Hole Size = 0.4mm
+   Violation between Hole Size Constraint: (0.4mm < 0.6mm) Pad DA1-1(56.2mm,62.8mm) on Multi-Layer Actual Hole Size = 0.4mm
+   Violation between Hole Size Constraint: (0.4mm < 0.6mm) Pad DA1-1(57.1mm,61.4mm) on Multi-Layer Actual Hole Size = 0.4mm
+   Violation between Hole Size Constraint: (0.4mm < 0.6mm) Pad DA1-1(57.1mm,62.1mm) on Multi-Layer Actual Hole Size = 0.4mm
+   Violation between Hole Size Constraint: (0.4mm < 0.6mm) Pad DA1-1(57.1mm,62.8mm) on Multi-Layer Actual Hole Size = 0.4mm
+   Violation between Hole Size Constraint: (0.4mm < 0.6mm) Pad DA1-1(58.9mm,61.4mm) on Multi-Layer Actual Hole Size = 0.4mm
+   Violation between Hole Size Constraint: (0.4mm < 0.6mm) Pad DA1-1(58.9mm,62.1mm) on Multi-Layer Actual Hole Size = 0.4mm
+   Violation between Hole Size Constraint: (0.4mm < 0.6mm) Pad DA1-1(58.9mm,62.8mm) on Multi-Layer Actual Hole Size = 0.4mm
+   Violation between Hole Size Constraint: (0.4mm < 0.6mm) Pad DA1-1(58mm,61.4mm) on Multi-Layer Actual Hole Size = 0.4mm
+   Violation between Hole Size Constraint: (0.4mm < 0.6mm) Pad DA1-1(58mm,62.1mm) on Multi-Layer Actual Hole Size = 0.4mm
+   Violation between Hole Size Constraint: (0.4mm < 0.6mm) Pad DA1-1(58mm,62.8mm) on Multi-Layer Actual Hole Size = 0.4mm
+Rule Violations :12
+
+Processing Rule : Hole Size Constraint (Min=0.3mm) (Max=5.9mm) (IsVia)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.25mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.15mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0mm) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
+   Violation between Board Outline Clearance(Outline Edge): (0.188mm < 0.25mm) Between Board Edge And Region (0 hole(s)) Bottom Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.125mm < 0.25mm) Between Board Edge And Track (50.2mm,50.225mm)(50.2mm,66.625mm) on Bottom Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.012mm < 0.25mm) Between Board Edge And Track (50.2mm,50.225mm)(52.251mm,50.225mm) on Bottom Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.125mm < 0.25mm) Between Board Edge And Track (50.2mm,66.625mm)(52.199mm,66.625mm) on Bottom Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.012mm < 0.25mm) Between Board Edge And Track (52.199mm,66.625mm)(52.251mm,50.225mm) on Bottom Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.149mm < 0.25mm) Between Board Edge And Track (74.7mm,67.9mm)(74.7mm,71.9mm) on Bottom Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.149mm < 0.25mm) Between Board Edge And Track (74.7mm,71.9mm)(77.7mm,71.9mm) on Bottom Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.225mm < 0.25mm) Between Board Edge And Track (79.7mm,67.9mm)(82.7mm,67.9mm) on Bottom Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.225mm < 0.25mm) Between Board Edge And Track (79.7mm,71.9mm)(82.7mm,71.9mm) on Bottom Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.051mm < 0.25mm) Between Board Edge And Track (80.8mm,50.225mm)(80.8mm,66.625mm) on Bottom Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.051mm < 0.25mm) Between Board Edge And Track (80.8mm,50.225mm)(82.851mm,50.225mm) on Bottom Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.126mm < 0.25mm) Between Board Edge And Track (80.8mm,66.625mm)(82.799mm,66.625mm) on Bottom Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.074mm < 0.25mm) Between Board Edge And Track (82.799mm,66.625mm)(82.851mm,50.225mm) on Bottom Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.225mm < 0.25mm) Between Board Edge And Track (82.7mm,67.9mm)(82.7mm,71.9mm) on Bottom Overlay 
+Rule Violations :14
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+
+Violations Detected : 57
+Waived Violations : 0
+Time Elapsed        : 00:00:01

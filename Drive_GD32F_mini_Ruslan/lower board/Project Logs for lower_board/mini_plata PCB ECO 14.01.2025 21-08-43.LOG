@@ -1,0 +1,7 @@
+Change Component Designator: OldDesignator=R? NewDesignator=R29
+Change Component Designator: OldDesignator=R? NewDesignator=R30
+Change Net Name : Old Net Name=NetR?_1 New Net Name=NetR29_1
+Added Pin To Net: NetName=NetR30_1 Pin=R30-1
+Added Pin To Net: NetName=NetR30_1 Pin=X1-3
+Added Net: Name=NetR30_1
+Added Member To Class: ClassName=Drive Member=Component R29 22

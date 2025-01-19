@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=GND Pin=C22-2
+Added Pin To Net: NetName=GNDP Pin=C22-2
+Added Net: Name=GNDP
+Added Member To Class: ClassName=Drive Member=Component XS7 SWD

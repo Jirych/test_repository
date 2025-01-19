@@ -1,0 +1,29 @@
+Removed Pin From Net: NetName=NetDD1_8 Pin=R3-1
+Removed Pin From Net: NetName=NetC5_1 Pin=R3-2
+Added Component: Designator=R3(0402_res)
+Add component (AddParameter): Name = "Case"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temp"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "120"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueDescription"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueManufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueManufacturerPartNumber"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueType"; Value = "Резистор"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC5_1 Pin=R3-1
+Added Pin To Net: NetName=NetDD1_8 Pin=R3-2
+Added Member To Class: ClassName=Drive Member=Component C7 0.1u
+Added Member To Class: ClassName=Drive Member=Component C8 0.1u
+Added Member To Class: ClassName=Drive Member=Component C11 0.1u
+Added Member To Class: ClassName=Drive Member=Component C12 4.7u
+Added Member To Class: ClassName=Drive Member=Component C13 0.1u
+Added Member To Class: ClassName=Drive Member=Component C14 0.1u
+Added Member To Class: ClassName=Drive Member=Component C16 0.1u
+Added Member To Class: ClassName=Drive Member=Component C17 18p
+Added Member To Class: ClassName=Drive Member=Component C19 4700p
+Added Member To Class: ClassName=Drive Member=Component R27 0
+Added Member To Class: ClassName=Drive Member=Component XS2 SSI
+Added Member To Class: ClassName=Drive Member=Component XS3 I2C or UART
+Added Member To Class: ClassName=Drive Member=Component XS5 SPI
+Added Member To Class: ClassName=Drive Member=Component XS7 SWD

@@ -1,0 +1,96 @@
+Removed Pin From Net: NetName=GND Pin=C11-1
+Removed Pin From Net: NetName=ENC_A Pin=C11-2
+Removed Pin From Net: NetName=AN_ACS Pin=R1-1
+Removed Pin From Net: NetName=AN_ACS Pin=R2-2
+Removed Pin From Net: NetName=+5V Pin=R4-2
+Change Component Comment : Designator=C12 Old Comment=100n New Comment=0.1u
+Change Component Designator: OldDesignator=C1 NewDesignator=C10
+Change Component Designator: OldDesignator=C2 NewDesignator=C12
+Change Component Designator: OldDesignator=C3 NewDesignator=C11
+Change Component Designator: OldDesignator=C4 NewDesignator=C1
+Change Component Designator: OldDesignator=C5 NewDesignator=C2
+Change Component Designator: OldDesignator=C6 NewDesignator=C3
+Change Component Designator: OldDesignator=C7 NewDesignator=C4
+Change Component Designator: OldDesignator=C8 NewDesignator=C5
+Change Component Designator: OldDesignator=C9 NewDesignator=C6
+Change Component Designator: OldDesignator=C10 NewDesignator=C14
+Change Component Designator: OldDesignator=C11 NewDesignator=C13
+Change Component Designator: OldDesignator=C12 NewDesignator=C9
+Change Component Designator: OldDesignator=C13 NewDesignator=C7
+Change Component Designator: OldDesignator=C14 NewDesignator=C8
+Change Component Designator: OldDesignator=DA1 NewDesignator=DA2
+Change Component Designator: OldDesignator=DA2 NewDesignator=DA1
+Change Component Designator: OldDesignator=R1 NewDesignator=R9
+Change Component Designator: OldDesignator=R2 NewDesignator=R10
+Change Component Designator: OldDesignator=R3 NewDesignator=R11
+Change Component Designator: OldDesignator=R4 NewDesignator=R12
+Change Component Designator: OldDesignator=R5 NewDesignator=R13
+Change Component Designator: OldDesignator=R6 NewDesignator=R15
+Change Component Designator: OldDesignator=R7 NewDesignator=R14
+Change Component Designator: OldDesignator=R8 NewDesignator=R1
+Change Component Designator: OldDesignator=R9 NewDesignator=R4
+Change Component Designator: OldDesignator=R10 NewDesignator=R2
+Change Component Designator: OldDesignator=R11 NewDesignator=R5
+Change Component Designator: OldDesignator=R12 NewDesignator=R7
+Change Component Designator: OldDesignator=R13 NewDesignator=R3
+Change Component Designator: OldDesignator=R14 NewDesignator=R8
+Change Component Designator: OldDesignator=R15 NewDesignator=R6
+Change Component Designator: OldDesignator=XS1 NewDesignator=XS3
+Change Component Designator: OldDesignator=XS2 NewDesignator=XS4
+Change Component Designator: OldDesignator=XS3 NewDesignator=XS2
+Change Component Designator: OldDesignator=XS4 NewDesignator=XS1
+Change component parameters: Designator = "C12" ("C9"); Footprint = "0603_CAP"; UniqueID = "\QVGWPWQK" ("\QVGWPWQK")
+Change component parameters (AddParameter): Name = "Case"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temp"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "URL"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueDescription"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueManufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueManufacturerPartNumber"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ValueType"; Value = "Конденсатор"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "X1" ("X1"); Footprint = "Header_8pin_2mm"; UniqueID = "\IPUNYBVG" ("\IPUNYBVG")
+Change component parameters (AddParameter): Name = "Parameter 1"; Value = "+5V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 2"; Value = "B_Out"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 3"; Value = "A_Out"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 4"; Value = "B_In"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 5"; Value = "A_In"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 6"; Value = "+5V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 7"; Value = "+3.3V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 8"; Value = "GND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "System"; Value = "Connector"; VariantName = "[No Variations]"
+Change component parameters: Designator = "X2" ("X2"); Footprint = "Header_8pin_2mm"; UniqueID = "\TPSGUSMN" ("\TPSGUSMN")
+Change component parameters (AddParameter): Name = "Parameter 1"; Value = "GND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 2"; Value = "+5V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 3"; Value = "ENC_B"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 4"; Value = "ENC_A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 5"; Value = "IN2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 6"; Value = "IN1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 7"; Value = "+5V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 8"; Value = "GND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "System"; Value = "Connector"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=ENC_A Pin=C13-1
+Added Pin To Net: NetName=GND Pin=C13-2
+Added Pin To Net: NetName=+5V Pin=R9-2
+Added Pin To Net: NetName=AN_ACS Pin=R12-1
+Added Pin To Net: NetName=AN_ACS Pin=R13-2
+Change Net Name : Old Net Name=NetC2_2 New Net Name=NetC12_2
+Change Net Name : Old Net Name=NetDA1_1 New Net Name=NetDA1_8
+Change Net Name : Old Net Name=NetDA1_3 New Net Name=NetDA2_3
+Change Net Name : Old Net Name=NetDA2_6 New Net Name=NetDA1_6
+Change Net Name : Old Net Name=NetDA2_7 New Net Name=NetDA1_7
+Change Net Name : Old Net Name=TTL_A_OUT New Net Name=TTL_A_OUT_GPIO
+Change Net Name : Old Net Name=TTL_B_OUT New Net Name=TTL_B_OUT_GPIO
+Added Pin To Net: NetName=NetDA1_4 Pin=DA1-4
+Added Pin To Net: NetName=NetDA1_4 Pin=R9-1
+Added Pin To Net: NetName=NetDA1_4 Pin=R10-2
+Added Net: Name=NetDA1_4
+Added Pin To Net: NetName=NetDA2_7 Pin=DA2-7
+Added Pin To Net: NetName=NetDA2_7 Pin=R12-2
+Added Net: Name=NetDA2_7

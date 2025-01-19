@@ -1,0 +1,73 @@
+Removed Pin From Net: NetName=NetDA2_7 Pin=R3-1
+Removed Pin From Net: NetName=GND Pin=R3-2
+Removed Pin From Net: NetName=TTL_B_IN_GPIO Pin=X1-4
+Removed Pin From Net: NetName=TTL_A_IN_GPIO Pin=X1-5
+Removed Member From Class: ClassName=powerful Member=R3
+Change Component Footprint: Designator=XS2 Old Footprint=step_2.5_4pin New Footprint=PH4_2mm
+Added Component: Designator=C?(CASE D)
+Add component (AddParameter): Name = "Case"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temp"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22x35"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueDescription"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueManufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueManufacturerPartNumber"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueType"; Value = "Конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C?(CASE D)
+Add component (AddParameter): Name = "Case"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temp"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22x35"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueDescription"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueManufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueManufacturerPartNumber"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueType"; Value = "Конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C?(CASE D)
+Add component (AddParameter): Name = "Case"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temp"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22x35"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueDescription"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueManufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueManufacturerPartNumber"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueType"; Value = "Конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R?(2512_res)
+Add component (AddParameter): Name = "Case"; Value = "2512"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temp"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueDescription"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueManufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueManufacturerPartNumber"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueType"; Value = "Резистор"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+12V Pin=C?-1
+Added Pin To Net: NetName=+12V Pin=C?-1
+Added Pin To Net: NetName=+12V Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-2
+Added Pin To Net: NetName=GND Pin=C?-2
+Added Pin To Net: NetName=GND Pin=C?-2
+Added Pin To Net: NetName=NetDA2_7 Pin=R?-1
+Added Pin To Net: NetName=GND Pin=R?-2
+Added Pin To Net: NetName=TTL_B_IN_GPIO Pin=X2-5
+Added Pin To Net: NetName=TTL_A_IN_GPIO Pin=X2-6
+Added Member To Class: ClassName=powerful Member=Component C? 22x35
+Added Member To Class: ClassName=powerful Member=Component C? 22x35
+Added Member To Class: ClassName=powerful Member=Component C? 22x35
+Added Member To Class: ClassName=powerful Member=Component R? 0.1

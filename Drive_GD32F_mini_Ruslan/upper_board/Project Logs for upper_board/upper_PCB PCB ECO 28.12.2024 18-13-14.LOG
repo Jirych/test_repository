@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=+5V Pin=X1-1
+Removed Pin From Net: NetName=GND Pin=X1-2
+Added Pin To Net: NetName=IN1 Pin=X1-1
+Added Pin To Net: NetName=IN2 Pin=X1-2
+Added Pin To Net: NetName=+5V Pin=X1-7
+Added Pin To Net: NetName=GND Pin=X1-8
+Added Member To Class: ClassName=powerful Member=Component C3 1.0n
+Added Member To Class: ClassName=powerful Member=Component C4 0.22x50
+Added Member To Class: ClassName=powerful Member=Component C8 15p
+Added Member To Class: ClassName=powerful Member=Component C9 15p
+Added Member To Class: ClassName=powerful Member=Component C13 22Ux16V
+Added Member To Class: ClassName=powerful Member=Component C14 100n
+Added Member To Class: ClassName=powerful Member=Component XS2 ENC

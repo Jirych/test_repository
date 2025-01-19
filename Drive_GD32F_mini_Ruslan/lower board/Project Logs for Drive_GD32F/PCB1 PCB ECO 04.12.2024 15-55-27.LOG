@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=+12V Pin=XS7-1
+Removed Pin From Net: NetName=+5V Pin=XS7-2
+Removed Pin From Net: NetName=+5V Pin=XS7-3
+Removed Pin From Net: NetName=GND Pin=XS7-4
+Removed Pin From Net: NetName=GND Pin=XS7-5
+Added Component: Designator=XS7(STEP_2.54mm 2X3)
+Added Pin To Net: NetName=+12V Pin=XS7-1
+Added Pin To Net: NetName=+5V Pin=XS7-2
+Added Pin To Net: NetName=+5V Pin=XS7-3
+Added Pin To Net: NetName=GND Pin=XS7-4
+Added Pin To Net: NetName=GND Pin=XS7-5
+Added Pin To Net: NetName=GND Pin=XS7-6
+Added Pin To Net: NetName=GND Pin=XS11-3

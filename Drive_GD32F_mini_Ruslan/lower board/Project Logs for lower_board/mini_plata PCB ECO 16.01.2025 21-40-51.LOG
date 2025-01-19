@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=XS4 Old Footprint=step_2.5_3pin New Footprint=PH3_2mm
+Change Component Footprint: Designator=XS6 Old Footprint=STEP_2.54mm 2X1 New Footprint=MW-2M
+Change Component Designator: OldDesignator=XS4 NewDesignator=XS7

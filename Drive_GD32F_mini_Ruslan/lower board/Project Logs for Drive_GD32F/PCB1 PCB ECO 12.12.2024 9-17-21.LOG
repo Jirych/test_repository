@@ -1,0 +1,46 @@
+Added Component: Designator=DD3(LQFP-48)
+Add component (AddParameter): Name = "Case"; Value = "LQFP-48"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueDescription"; Value = "Микроконтроллер"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueManufacturer"; Value = "Giga Device"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueManufacturerPartNumber"; Value = "GD32F303C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueType"; Value = "Микроконтроллер"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC10_1 Pin=DD3-1
+Added Pin To Net: NetName=NetC27_1 Pin=DD3-5
+Added Pin To Net: NetName=NetDD3_6 Pin=DD3-6
+Added Pin To Net: NetName=M\C\L\R\ Pin=DD3-7
+Added Pin To Net: NetName=GND Pin=DD3-8
+Added Pin To Net: NetName=NetB1_2 Pin=DD3-9
+Added Pin To Net: NetName=pot Pin=DD3-12
+Added Pin To Net: NetName=AN_ACS Pin=DD3-13
+Added Pin To Net: NetName=INA826OUT Pin=DD3-14
+Added Pin To Net: NetName=SSI_SCK Pin=DD3-15
+Added Pin To Net: NetName=SSI_MISO Pin=DD3-16
+Added Pin To Net: NetName=TTL_B_IN_GPIO Pin=DD3-17
+Added Pin To Net: NetName=NetDD3_20 Pin=DD3-20
+Added Pin To Net: NetName=GND Pin=DD3-23
+Added Pin To Net: NetName=NetDD3_24 Pin=DD3-24
+Added Pin To Net: NetName=SPI_SS Pin=DD3-25
+Added Pin To Net: NetName=SPI_SCLK Pin=DD3-26
+Added Pin To Net: NetName=SPI_MISO Pin=DD3-27
+Added Pin To Net: NetName=SPI_MOSI Pin=DD3-28
+Added Pin To Net: NetName=IN1 Pin=DD3-29
+Added Pin To Net: NetName=IN2 Pin=DD3-30
+Added Pin To Net: NetName=NetDD3_31 Pin=DD3-31
+Added Pin To Net: NetName=RX(CAN) Pin=DD3-32
+Added Pin To Net: NetName=TX(CAN) Pin=DD3-33
+Added Pin To Net: NetName=DIO Pin=DD3-34
+Added Pin To Net: NetName=GND Pin=DD3-35
+Added Pin To Net: NetName=NetDD3_24 Pin=DD3-36
+Added Pin To Net: NetName=CLK Pin=DD3-37
+Added Pin To Net: NetName=TTL_A_IN_GPIO Pin=DD3-38
+Added Pin To Net: NetName=ENC_A Pin=DD3-40
+Added Pin To Net: NetName=ENC_B Pin=DD3-41
+Added Pin To Net: NetName=I2C_SCL/USART_TX Pin=DD3-42
+Added Pin To Net: NetName=I2C_SDA/USART_RX Pin=DD3-43
+Added Pin To Net: NetName=NetDD3_44 Pin=DD3-44
+Added Pin To Net: NetName=TTL_A_OUT_GPIO Pin=DD3-45
+Added Pin To Net: NetName=TTL_B_OUT_GPIO Pin=DD3-46
+Added Pin To Net: NetName=GND Pin=DD3-47
+Added Pin To Net: NetName=NetDD3_24 Pin=DD3-48
+Added Pin To Net: NetName=+5V Pin=XS2-5
+Added Member To Class: ClassName=Схема1 Member=Component DD3 GD32F303C

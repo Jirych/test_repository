@@ -1,0 +1,6 @@
+Added Component: Designator=X?(PBD_8_2mm)
+Add component (AddParameter): Name = "System"; Value = "Connector"; VariantName = "[No Variations]"
+Added Component: Designator=X?(PBD_8_2mm)
+Add component (AddParameter): Name = "System"; Value = "Connector"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=powerful Member=Component X? PBD-8
+Added Member To Class: ClassName=powerful Member=Component X? PBD-8

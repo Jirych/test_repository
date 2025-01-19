@@ -1,0 +1,25 @@
+Added Component: Designator=ZQ1(KX-7T)
+Add component (AddParameter): Name = "Case"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temp"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "8Mhz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueDescription"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueManufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueManufacturerPartNumber"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueType"; Value = " варцевый резонатор"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC15_1 Pin=ZQ1-1
+Added Pin To Net: NetName=NetC16_1 Pin=ZQ1-2
+Added Pin To Net: NetName=GND Pin=ZQ1-3
+Added Pin To Net: NetName=GND Pin=ZQ1-3
+Added Member To Class: ClassName=Drive Member=Component C1 47.0
+Added Member To Class: ClassName=Drive Member=Component C2 47.0
+Added Member To Class: ClassName=Drive Member=Component C4 0.1
+Added Member To Class: ClassName=Drive Member=Component C6 0.1u
+Added Member To Class: ClassName=Drive Member=Component C9 100n
+Added Member To Class: ClassName=Drive Member=Component C12 0.1u
+Added Member To Class: ClassName=Drive Member=Component C15 18p
+Added Member To Class: ClassName=Drive Member=Component C17 4700p
+Added Member To Class: ClassName=Drive Member=Component C19 22Ux16V
+Added Member To Class: ClassName=Drive Member=Component ZQ1 8Mhz
+Added Room: Name=Drive

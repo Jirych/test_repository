@@ -1,0 +1,41 @@
+Added Component: Designator=X1(PBD_8_2mm)
+Add component (AddParameter): Name = "System"; Value = "Connector"; VariantName = "[No Variations]"
+Added Component: Designator=X2(PBD_8_2mm)
+Add component (AddParameter): Name = "System"; Value = "Connector"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=Drive Member=Component C1 0,1
+Added Member To Class: ClassName=Drive Member=Component C3 47p
+Added Member To Class: ClassName=Drive Member=Component C8 22Ux16V
+Added Member To Class: ClassName=Drive Member=Component C10 15p
+Added Member To Class: ClassName=Drive Member=Component C13 0.1
+Added Member To Class: ClassName=Drive Member=Component C14 2.2u
+Added Member To Class: ClassName=Drive Member=Component C15 100n
+Added Member To Class: ClassName=Drive Member=Component C17 0.1u
+Added Member To Class: ClassName=Drive Member=Component C19 0.1u
+Added Member To Class: ClassName=Drive Member=Component C20 0.1u
+Added Member To Class: ClassName=Drive Member=Component C22 18p
+Added Member To Class: ClassName=Drive Member=Component C24 100n
+Added Member To Class: ClassName=Drive Member=Component C26 100n
+Added Member To Class: ClassName=Drive Member=Component DD3 SN65HVD230DR
+Added Member To Class: ClassName=Drive Member=Component HL1 «елЄный
+Added Member To Class: ClassName=Drive Member=Component R7 10k
+Added Member To Class: ClassName=Drive Member=Component R11 2к
+Added Member To Class: ClassName=Drive Member=Component R20 5k
+Added Member To Class: ClassName=Drive Member=Component R21 22
+Added Member To Class: ClassName=Drive Member=Component R23 22
+Added Member To Class: ClassName=Drive Member=Component R25 10k
+Added Member To Class: ClassName=Drive Member=Component R26 220
+Added Member To Class: ClassName=Drive Member=Component R27 5k1
+Added Member To Class: ClassName=Drive Member=Component R29 62
+Added Member To Class: ClassName=Drive Member=Component R30 22
+Added Member To Class: ClassName=Drive Member=Component R31 5k1
+Added Member To Class: ClassName=Drive Member=Component R33 0
+Added Member To Class: ClassName=Drive Member=Component R34 10k
+Added Member To Class: ClassName=Drive Member=Component R35 10k
+Added Member To Class: ClassName=Drive Member=Component R37 22
+Added Member To Class: ClassName=Drive Member=Component R39 10k
+Added Member To Class: ClassName=Drive Member=Component R41 22
+Added Member To Class: ClassName=Drive Member=Component X1 PBD-8
+Added Member To Class: ClassName=Drive Member=Component X2 PBD-8
+Added Member To Class: ClassName=Drive Member=Component XS1 power_5v
+Added Member To Class: ClassName=Drive Member=Component XS5 POT
+Added Member To Class: ClassName=Drive Member=Component XS8 TTL

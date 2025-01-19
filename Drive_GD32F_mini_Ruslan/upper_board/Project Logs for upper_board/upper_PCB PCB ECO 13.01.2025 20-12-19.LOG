@@ -1,0 +1,27 @@
+Removed Pin From Net: NetName=NetDA1_3 Pin=DA2-6
+Removed Pin From Net: NetName=NetDA1_1 Pin=XS1-1
+Change component parameters: Designator = "X1" ("X1"); Footprint = "Header_8pin_2mm"; UniqueID = "\IPUNYBVG" ("\IPUNYBVG")
+Change component parameters (AddParameter): Name = "Parameter 1"; Value = "3V3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 2"; Value = "IN1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 3"; Value = "IN2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 4"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 5"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 6"; Value = "AN_ACS"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 7"; Value = "+5V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 8"; Value = "GND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "System"; Value = "Connector"; VariantName = "[No Variations]"
+Change component parameters: Designator = "X2" ("X2"); Footprint = "Header_8pin_2mm"; UniqueID = "\TPSGUSMN" ("\TPSGUSMN")
+Change component parameters (AddParameter): Name = "Parameter 1"; Value = "ENC_A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 2"; Value = "ENC_B"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 3"; Value = "TTL_A_O"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 4"; Value = "TTL_B_O"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 5"; Value = "TTL_B_I"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 6"; Value = "TTL_A_I"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 7"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 8"; Value = "GND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "System"; Value = "Connector"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetDA1_1 Pin=DA2-8
+Added Pin To Net: NetName=NetDA1_3 Pin=XS1-2
+Added Pin To Net: NetName=NetDA2_6 Pin=DA2-6
+Added Pin To Net: NetName=NetDA2_6 Pin=XS1-1
+Added Net: Name=NetDA2_6
